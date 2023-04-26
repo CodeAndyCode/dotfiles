@@ -28,8 +28,7 @@ telescope.setup {
 
 
 vim.keymap.set('n', '<leader>pf', builtin.find_files, {}) -- Project files
-vim.keymap.set('n', '<leader>ps', function()
-	builtin.grep_string({ search = vim.fn.input("Grep > ")}) end) -- String search
+vim.keymap.set('n', '<leader>ps', function() builtin.grep_string({ search = vim.fn.input("Grep > ")}) end) -- String search
 vim.keymap.set('n', '<leader>gf', builtin.git_files, {}) -- Git files
 
 -- Browser magic

@@ -28,6 +28,11 @@ vim.opt.scrolloff = 10 --scrolling if reach 10
 vim.opt.signcolumn = "yes"
 vim.opt.isfname: append( "@-@" )
 
+-- However, if an integration is not set up, then the default behavior 
+-- is to calculate the commentstring on the CursorHold autocmd, 
+-- meaning that the :h updatetime should be set to a smaller value than the default of 4s:
+vim.opt.updatetime = 100
+
 vim.opt.title = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true

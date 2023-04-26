@@ -22,10 +22,7 @@ require('gitsigns').setup {
     end, { expr = true })
 
     -- Actions
-    map('n', '<leader>hp', gs.preview_hunk)
-    map('n', '<leader>hb', function() gs.blame_line { full = true } end)
-    map('n', '<leader>ha', gs.toggle_current_line_blame)
-    map('n', '<leader>hd', function() gs.diffthis('~') end)
-    map('n', '<leader>hx', gs.toggle_deleted)
+    map('n', '<leader>gp', gs.preview_hunk)
+    map('n', '<leader>gl', gs.toggle_current_line_blame)
   end
 }

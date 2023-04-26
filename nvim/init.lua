@@ -1,10 +1,18 @@
-require("codeandycode.set") --settings
-require("codeandycode.remap") --keybinds
-require("codeandycode.packer") --pack managment
+require('config.EcoVim')
 
--- SETUP
-require('impatient')
-require("nvim-tree").setup()
-require('colorizer').setup()
-require('gitsigns').setup()
-require('Comment').setup()
+require('utils.globals')
+require('utils.functions')
+
+require('config.options')
+require('config.lazy')
+require('config.keymappings')
+require('config.autocmds')
+
+require('internal.winbar')
+require('internal.cursorword')
+
+require('lsp.config')
+require('lsp.setup')
+require('lsp.functions')
+
+require('snippets.react')
